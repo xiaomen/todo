@@ -1,0 +1,14 @@
+application: todo
+version: 1
+runtime: python
+api_version: 1
+
+handlers:
+- url: /static/admin/(.*)
+  static_files: ./venv/lib/python2.6/site-packages/django/contrib/admin/media/\1
+
+- url: /static/(.*)
+  static_files: ./jihua/static/\1
+
+- url: /.*
+  wsgi_app: app:app

@@ -1,0 +1,3 @@
+[submodule "jihua"]
+	path = jihua
+	url = git://github.com/ichuan/jihua.git
