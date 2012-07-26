@@ -8,7 +8,7 @@ handlers:
   static_files: ${VENV_SITE_PACKAGES}/django/contrib/admin/media/\1
 
 - url: /static/(.*)
-  static_files: ./jihua/static/\1
+  static_files: /jihua/static/\1
 
 - url: /.*
   wsgi_app: app:app
